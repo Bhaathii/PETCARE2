@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Basic Colors -->
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- Modern Accent Colors -->
+    <color name="textHeading">#008EFF</color> <!-- Blue for headings -->
+    <color name="primaryColor">#2196F3</color> <!-- Primary Blue -->
+    <color name="secondaryColor">#FF4081</color> <!-- Bright Pink Accent -->
+
+    <!-- Modern Background and Buttons -->
+    <color name="backgroundColor">#F5F5F5</color> <!-- Light Gray Background -->
+    <color name="buttonColor">#FF5722</color> <!-- Vivid Orange for buttons -->
+    <color name="buttonTextColor">#FFFFFF</color> <!-- White Text for buttons -->
+
+    <!-- Modern Neutrals -->
+    <color name="darkGray">#333333</color> <!-- Dark Gray for text or elements -->
+    <color name="lightGray">#E0E0E0</color> <!-- Light Gray for borders or subtle UI elements -->
+    <color name="midGray">#9E9E9E</color> <!-- Medium Gray for secondary text or dividers -->
+
+    <!-- Fresh Vibrant Colors -->
+    <color name="mintGreen">#4CAF50</color> <!-- Fresh Green for success or positive actions -->
+    <color name="deepPurple">#673AB7</color> <!-- Deep Purple for headers or highlights -->
+    <color name="coral">#FF7F50</color> <!-- Coral Red for highlights or active states -->
+    <color name="electricBlue">#00BCD4</color> <!-- Electric Blue for active links or buttons -->
+
+    <!-- Soft Pastels -->
+    <color name="pastelPink">#FFB6C1</color> <!-- Soft Pastel Pink -->
+    <color name="pastelYellow">#FFEB3B</color> <!-- Pastel Yellow for light background or highlights -->
+    <color name="pastelPurple">#D1C4E9</color> <!-- Pastel Purple for subtle accents -->
+
+
+    <color name="colorBackgroundStart">#FFFFFF</color>
+    <color name="colorBackgroundEnd">#F4F4F4</color>
+
+    <color name="colorAccent">#FF4081</color>
+
+
+
+    <color name="teal_200">#03DAC5</color>
+    <color name="teal_700">#018786</color>
+    <color name="darkerGray">#1E1E1E</color>
+
+    <color name="darkPurple">#6200EE</color>
+    <color name="charcoalGray">#2C2C2C</color>
+    <color name="colorPrimary">#6200EE</color>
+
+
+    <color name="colorPrimaryDark">#3700B3</color>
+
+
+
+    <!-- Dark Mode Friendly Colors -->
+    <color name="darkBackground">#121212</color> <!-- Dark Background Color for Dark Mode -->
+    <color name="darkText">#E0E0E0</color> <!-- Light text for dark mode -->
+    <color name="darkCard">#1E1E1E</color> <!-- Dark Card Color for dark mode elements -->
+
+
+
+
+</resources>

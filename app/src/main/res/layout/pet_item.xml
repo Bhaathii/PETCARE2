@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <!-- Pet Image -->
+
+        <!-- Pet Name -->
+        <ImageView
+            android:id="@+id/petImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="Pet Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/dog1"
+            android:background="@drawable/round_image"
+            android:clipToOutline="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/petNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pet Name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@id/petImage"
+            app:layout_constraintTop_toTopOf="@id/petImage"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Pet Age -->
+        <TextView
+            android:id="@+id/petAgeTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Age: 3"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/petNameTv"
+            app:layout_constraintTop_toBottomOf="@id/petNameTv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Pet Sex -->
+        <TextView
+            android:id="@+id/petSexTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Sex: Male"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/petNameTv"
+            app:layout_constraintTop_toBottomOf="@id/petAgeTv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Pet Breed -->
+        <TextView
+            android:id="@+id/petBreedTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Breed: Labrador"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/petNameTv"
+            app:layout_constraintTop_toBottomOf="@id/petSexTv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Medical Dates -->
+        <TextView
+            android:id="@+id/medicalDatesTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Medical Dates: 2023-10-01"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/petNameTv"
+            app:layout_constraintTop_toBottomOf="@id/petBreedTv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

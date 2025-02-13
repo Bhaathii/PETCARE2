@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".UpdateClinicActivity">
+
+    <EditText
+        android:id="@+id/updateClinicNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Clinic Name"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/updateContactNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Contact Number"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/updateClinicNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/updateAddressEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Address"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="textPostalAddress"
+        app:layout_constraintTop_toBottomOf="@id/updateContactNumberEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/updateCityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update City"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/updateAddressEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/updateDescriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Description"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="textMultiLine"
+        android:maxLines="5"
+        android:gravity="start|top"
+        app:layout_constraintTop_toBottomOf="@id/updateCityEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/updateOwnerNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Update Owner Name"
+        android:textSize="16sp"
+        android:padding="12dp"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/updateDescriptionEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/updateClinicButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Update Clinic"
+        android:backgroundTint="@color/deepPurple"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/updateOwnerNameEditText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
