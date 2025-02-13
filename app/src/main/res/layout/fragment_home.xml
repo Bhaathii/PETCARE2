@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/frame_layout"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <!-- Search Bar -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/search_bar_background"
+        android:queryHint="Search for pets or tips..."
+        android:textColorHint="@android:color/white"
+        android:iconifiedByDefault="false"
+        android:hint="search here...."
+        android:text="search here....." />
+
+    <!-- Welcome Text -->
+
+    <!-- ImageView for the photo (Dog Image) -->
+
+    <!-- Floating Action Buttons -->
+    <TextView
+        android:id="@+id/welcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:text="Your Pet's Best Friend!"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+
+    <ImageView
+        android:id="@+id/petImage"
+        android:layout_width="401dp"
+        android:layout_height="467dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dog2" />
+
+    <LinearLayout
+        android:layout_width="369dp"
+        android:layout_height="98dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:spacing="24dp">
+
+        <!-- Add Pet Button -->
+
+
+        <ImageView
+            android:id="@+id/btnn1"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/add_pet"
+            android:focusable="true"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/addpet" />
+
+        <ImageView
+            android:id="@+id/btnn3"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="buy"
+            android:focusable="true"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/buy"/>
+
+        <!-- Hospital Button -->
+        <ImageView
+            android:id="@+id/btnn2"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:contentDescription="@string/hospital"
+            android:focusable="true"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/hospital" />
+    </LinearLayout>
+
+</FrameLayout>

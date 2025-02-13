@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="4dp"
+    app:cardCornerRadius="8dp"
+    app:cardBackgroundColor="@color/cardview_light_background">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp">
+
+        <!-- Clinic Name -->
+        <TextView
+            android:id="@+id/clinicNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Clinic Name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Contact Number -->
+        <TextView
+            android:id="@+id/contactNumberTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Contact Number: 1234567890"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/clinicNameTv"
+            app:layout_constraintTop_toBottomOf="@id/clinicNameTv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/addressTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Address: 123 Main St"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/clinicNameTv"
+            app:layout_constraintTop_toBottomOf="@id/contactNumberTv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- City -->
+        <TextView
+            android:id="@+id/cityTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="City: New York"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/clinicNameTv"
+            app:layout_constraintTop_toBottomOf="@id/addressTv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/descriptionTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Description: A great clinic"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/clinicNameTv"
+            app:layout_constraintTop_toBottomOf="@id/cityTv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Owner Name -->
+        <TextView
+            android:id="@+id/ownerNameTv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Owner Name: John Doe"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@id/clinicNameTv"
+            app:layout_constraintTop_toBottomOf="@id/descriptionTv"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
